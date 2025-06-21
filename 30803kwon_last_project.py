@@ -4,9 +4,9 @@ import altair as alt
 
 @st.cache
 def load_data():
-    sdr = pd.read_csv("data/sdr_scores.csv")
-    owid = pd.read_csv("data/ourworldindata_sdg9.csv")
-    wb = pd.read_csv("data/worldbank_sdg9.csv")
+    sdr = pd.read_csv("sustainable_development_report_2023.csv")
+owid = pd.read_csv("manufacturing-value-added-to-gdp.csv")  # 예시, 파일명 정확히 확인
+wb = pd.read_csv("sdg_index_2000-2022.csv")  # 예시, 파일명 정확히 확인
     return sdr, owid, wb
 
 def main():
